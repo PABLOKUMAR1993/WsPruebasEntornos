@@ -10,8 +10,10 @@ public class Main {
         System.out.println("Esto es otro cambio en el proyecto");
         Persona p = new Persona("Steve Rogers", 45);
         System.out.println(p);
+        Direccion d = new Direccion("Calle", "Manjavacas", "16630");
+        Direccion d1 = new Direccion("calle", "La Mancha", "16630");
     }
 
-    Direccion d = new Direccion("calle", "La Mancha", "16630");
+
 
 }
