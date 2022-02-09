@@ -4,6 +4,7 @@ public class Persona {
 
     private String nombre;
     private int edad;
+    private Direccion direccion;
 
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
@@ -26,4 +27,20 @@ public class Persona {
         this.edad = edad;
     }
 
+    public Direccion getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                ", direccion=" + direccion +
+                '}';
+    }
 }
