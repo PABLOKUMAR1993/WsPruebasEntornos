@@ -2,7 +2,7 @@ package git.entidad;
 
 public class Direccion {
 
-    private String tipoVia, nombreVia, CP;
+    private String tipoVia, nombreVia, CP, pais;
 
     public Direccion(String tipoVia, String nombreVia, String CP) {
         this.tipoVia = tipoVia;
@@ -34,4 +34,21 @@ public class Direccion {
         this.CP = CP;
     }
 
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    @Override
+    public String toString() {
+        return "Direccion{" +
+                "tipoVia='" + tipoVia + '\'' +
+                ", nombreVia='" + nombreVia + '\'' +
+                ", CP='" + CP + '\'' +
+                ", pais='" + pais + '\'' +
+                '}';
+    }
 }
